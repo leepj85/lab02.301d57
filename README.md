@@ -15,6 +15,6 @@
 
 3. Style the application
 * Estimate of time needed to complete: 2 hrs
-* Start time:
+* Start time: 11:40am
 * Finish time: _____
 * Actual time needed to complete: _____

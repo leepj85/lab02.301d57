@@ -1,0 +1,17 @@
+img{
+  width: 100%;
+  margin: 5px;
+    
+}
+#photo-template{
+    display: none;
+}
+header > div{
+    text-align: center;
+    padding-bottom: 30px;
+}
+select{
+    background-color: rgba(196, 193, 190, 0.945);
+    border: 2px rgb(54, 61, 68) solid;
+    
+}
