@@ -60,6 +60,7 @@ $("#dropdown").on('change', function() {
   $('section').hide();
   if (this.value === 'default') {
     $('section').show();
+    $('#photo-template').hide();
   }
   $(`.${this.value}`).show();
 });
