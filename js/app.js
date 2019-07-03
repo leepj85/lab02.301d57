@@ -16,18 +16,15 @@ Image.allImages = [];
 Image.readJson = () => {
   $.get('../data/page-1.json', 'json')
     .then(data => {
-      data.forEach(item => {
-        Image.allImages.push(new Image(item));
+      data.forEach(img => {
+        Image.allImages.push(new Image(img));
       });
+      Image.allImages.forEach(img => {
+        img.render();
+      })
     })
-  .then(Image.loadImages);
 };
 
-Image.loadImages () = function() {
-  Image.allImages.forEach(img => {
-    img.render();
-  })
-}
 
 //render function
 Image.prototype.render = function() {
