@@ -14,7 +14,7 @@ Image.allImages = [];
 
 // jQuery GETTER for .json  
 Image.readJson = () => {
-  $.get('../data/page-1.json', 'json')
+  $.get('data/page-1.json', 'json')
     .then(data => {
       data.forEach(img => {
         Image.allImages.push(new Image(img));
