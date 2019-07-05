@@ -23,18 +23,21 @@
     </div>
   </header>
   <main>
-    <section id="photo-template">
-      <h2></h2>
-      <div>
-        <img src="" alt="">
-      </div>
-      <p></p>
-    </section>
+    <script id="handlebars-template" type="text/x-handlebars-template">
+      <section class="{{keyword}}">
+        <h2>{{title}}</h2>
+        <div>
+          <img src="{{url}}" alt="{{keyword}}">
+        </div>
+        <p>{{description}}</p>
+      </section>
+    </script>
   </main>
   <footer>
     &copy; 2018 Code Fellows
   </footer>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
   <script src="./js/app.js"></script>
 </body>
 

@@ -29,19 +29,10 @@ Image.readJson = () => {
 // Renders the images to the screen
 Image.prototype.render = function() {
   // New image section using jQuery 
-  const $newImage = $('<section ></section>');
-
-  // Overwrites id of variable to the current keyword.
-  $newImage.attr('class', this.keyword);
-
-  const imageTemplate = $('#photo-template').html();
-
-  $newImage.html(imageTemplate);
-  $newImage.find('h2').text(this.title);
-  $newImage.find('img').attr('src', this.url);
-  $newImage.find('p').text(this.description);
-
-  $('main').append($newImage);
+  const $source = $('#handlebars-template').html();
+  const template = Handlebars.compile($source);
+  const newHtml = template(this);
+  $('main').append(newHtml);
 
 }
 
